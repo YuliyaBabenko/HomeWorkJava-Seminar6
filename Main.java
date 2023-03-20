@@ -24,14 +24,4 @@ public class Main {
         }
         return list;
     }
-
-    public void fillTree(TreeNode root, Integer in) {
-        if (root == null) {
-            root.val = in;
-        } else if (root.left == null) {
-            fillTree(root.left, in);
-        } else {
-            fillTree(root.right, in);
-        }
-    }
 }
